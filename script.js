@@ -1,3 +1,9 @@
+// Useful Codes:   
+// alert() -> put out notification
+// console.log() -> print in console
+// arrayName.push() -> add an item to the end of the array
+
+
 // Fibonnaci generator: "n" dedicates the amount of numbers inside the array. output is in form of array
 
 function fibonacciGenerator(n) {
