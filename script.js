@@ -2,7 +2,8 @@
 // alert() -> put out notification
 // console.log() -> print in console
 // arrayName.push() -> add an item to the end of the array
-
+// Math.random() -> generates random number
+// Math.floor() -> round any number by removing it's decimals, regardless of their value
 
 // Fibonnaci generator: "n" dedicates the amount of numbers inside the array. output is in form of array
 
