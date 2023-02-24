@@ -30,3 +30,10 @@ function fibonacciGenerator(n) {
 }
 
 console.log(fibonacciGenerator(10));
+
+// Dice number generator
+
+function diceGenerator() {
+var diceNumber = Math.floor(Math.random()*6)+1;
+    return diceNumber;
+}
