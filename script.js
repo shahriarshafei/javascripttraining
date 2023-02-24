@@ -37,3 +37,5 @@ function diceGenerator() {
 var diceNumber = Math.floor(Math.random()*6)+1;
     return diceNumber;
 }
+
+console.log(diceGenerator());
