@@ -4,6 +4,7 @@
 // arrayName.push() -> add an item to the end of the array
 // Math.random() -> generates random number
 // Math.floor() -> round any number by removing it's decimals, regardless of their value
+// var audio = new Audio("URL"); -> audio.play(); -> method for playing an audio file
 
 // Fibonnaci generator: "n" dedicates the amount of numbers inside the array. output is in form of array
 
