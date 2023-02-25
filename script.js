@@ -6,6 +6,10 @@
 // Math.floor() -> round any number by removing it's decimals, regardless of their value
 // var audio = new Audio("URL"); -> audio.play(); -> method for playing an audio file
 
+// useful DOM commands:
+// document.querySelector() -> returns the first element with specified tag or class or id
+// document.querySelectorAll() -> returns all the element with specified tag or class or id in form of an array
+
 // Fibonnaci generator: "n" dedicates the amount of numbers inside the array. output is in form of array
 
 function fibonacciGenerator(n) {
