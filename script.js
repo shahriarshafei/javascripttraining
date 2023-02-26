@@ -25,3 +25,19 @@ alert("You have "+userLeftYears+" years, "+userLeftMonths+" months, "+
     }
 }
 timeLeft();
+
+// Exercise 3: Write a program that logs actions of a roboto that recieves an amount of-
+//-money from you and goes to the store and buy as much bottles of milk as it can with-
+//-that money and comes back to you give you back the milks and remaining of your money.
+var priceOfMilk = 1.5; //assuming price of each bottle of milk is 1.5$
+function robot(money){
+    var bottlesOfMilk = Math.floor(money/priceOfMilk); //You can't buy less than 1 bottle of milk
+    var remainderOfMoney = money%priceOfMilk;
+    console.log("The robot takes "+money+"$.");
+    console.log("The robot goes to the store.");
+    console.log("The robot buys "+bottlesOfMilk+" bottles of milk.");
+    console.log("The robot comes back home.");
+    console.log("The robot gives you "+bottlesOfMilk+" bottles of milk and "
+                +remainderOfMoney+"$ back.")
+}
+robot(17); //giving 17$ to the robot
