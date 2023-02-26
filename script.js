@@ -14,6 +14,7 @@ var userLeftYears = 90 - userAge;
 var userLeftMonths = userLeftYears*12; //assuming there are 12 months in a year
 var userLeftWeeks = userLeftYears*52;  //assuming there are 52 weeks in a year
 var userLeftDays = userLeftYears*365;  //assuming there are 365 days in a year
+function timeLeft(){
 if(userLeftYears===1){
     alert("You have "+userLeftYears+" year, "+userLeftMonths+" months, "+
                     userLeftWeeks+" weeks and "+userLeftDays+" days left to live");
@@ -22,3 +23,5 @@ else {
 alert("You have "+userLeftYears+" years, "+userLeftMonths+" months, "+
                     userLeftWeeks+" weeks and "+userLeftDays+" days left to live");
     }
+}
+timeLeft();
