@@ -32,7 +32,7 @@ timeLeft();
 var priceOfMilk = 1.5; //assuming price of each bottle of milk is 1.5$
 function robot(money){
     var bottlesOfMilk = Math.floor(money/priceOfMilk); //You can't buy less than 1 bottle of milk
-    var remainderOfMoney = money%priceOfMilk;
+    var remainderOfMoney = (money%priceOfMilk).toFixed(2);
     console.log("The robot takes "+money+"$.");
     console.log("The robot goes to the store.");
     console.log("The robot buys "+bottlesOfMilk+" bottles of milk.");
