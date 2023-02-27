@@ -58,3 +58,24 @@ function throwDice (){
     return diceNumber;
 }
 alert(throwDice());
+
+// Exercise 6: Write a "Love Calculator" programs that inputs two names and calculates-
+//-their compatibility mesured in percent and alerts custom messages based on score
+var nameOne = prompt("Enter your name: ");
+var nameTwo = prompt("Enter your crush's name: ");
+function result (){
+    var randomPercent = Math.round(Math.random()*100);
+    return randomPercent
+}
+var result = result();
+alert(nameOne+" and "+nameTwo+" compatibility rate is "+result+"%")
+
+if (result<50){
+    alert("They come along like gasoline and fire!")
+    }
+else if (result>50 && result<100){
+    alert("They will be OK!")
+    }
+else if (result===100){
+    alert("That's True Love My Friend!")
+    }
