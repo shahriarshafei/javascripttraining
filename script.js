@@ -51,3 +51,10 @@ function bmiCalculator (userHeight, userWeight){
     return Math.round(bmi);
 }
 alert("Your BMI is : " + bmiCalculator(userHeight, userWeight));
+
+// Exercise 5: Write a program to generates dice number
+function throwDice (){
+    var diceNumber = Math.floor(Math.random()*6)+1;
+    return diceNumber;
+}
+alert(throwDice());
