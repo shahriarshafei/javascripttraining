@@ -41,3 +41,13 @@ function robot(money){
                 +remainderOfMoney+"$ back.")
 }
 robot(17); //giving 17$ to the robot
+
+// Exercise 4: Write a program to calculate BMI using user input of height and weight
+// BMI = weight / (Height to the power of 2)
+var userHeight = prompt("Please enter your height: "); // Height in "m"
+var userWeight = prompt("Please enter your weight: "); // Weight in "kg"
+function bmiCalculator (userHeight, userWeight){
+    var bmi = userWeight / Math.pow(userHeight, 2);
+    return Math.round(bmi);
+}
+alert("Your BMI is : " + bmiCalculator(userHeight, userWeight));
