@@ -79,3 +79,32 @@ else if (result>50 && result<100){
 else if (result===100){
     alert("That's True Love My Friend!")
     }
+
+// Exercise 7: Write a program that inputs number of the year and calculate if it's a leap-
+//-year or not and output it. Leap year conditions: 1.Is divisible by "4" 2.Except if it's-
+//-divisible by "100" 3.Unles if it's also divisible by "400"
+var userInput = prompt("Please enter the year number: ");
+var div4 = (userInput%4) === 0;
+var div100 = (userInput%100) === 0;
+var div400 = (userInput%400) === 0;
+function leapCalculator(){
+    if(div4){
+        if(div100){
+            if(div400){
+                return " is a leap year."
+            }
+            else{
+                return " is NOT a leap year."
+            }  
+        }
+        else{
+            return " is a leap year."
+        }
+
+    }
+    else{
+        return " is NOT a leap year."
+    }
+}
+
+alert(userInput+leapCalculator());
