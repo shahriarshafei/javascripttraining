@@ -108,3 +108,15 @@ function leapCalculator(){
 }
 
 alert(userInput+leapCalculator());
+
+// Exercise 8: Write a program with a pre-made guest list that asks user to inputs his/her name
+//-and check if the user's name is among the names in the list. if so alert a greeting message-
+//-and if not some other message
+var guestList = ["angela", "david", "sarah", "rachel", "ryrus"]
+var userInput7 = prompt("Please enter your name: ").toLocaleLowerCase();
+if (guestList.includes(userInput7)){
+    alert("Welcome!")
+}
+else {
+    alert("Sorry, you're not invited!")
+}
