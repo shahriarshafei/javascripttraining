@@ -120,3 +120,27 @@ if (guestList.includes(userInput7)){
 else {
     alert("Sorry, you're not invited!")
 }
+
+// Exercise 9: Write a program that inputs a number as array lenght and print out an array-
+//-in console that says "Fizz" for any number that is divisible by 3, "Buzz" for any number-
+//-that is divisible by 5, and "FizzBuzz" for any number that is divisible by 3 and 5
+var userInput9 = prompt("Please enter your desire array lenght: ");
+var fbArray=[];
+for(var i =0; i<userInput9; i++){
+    var fbNumber = i+1;
+    var fbDivBy5 = (fbNumber%5===0);
+    var fbDivBy3 = (fbNumber%3===0);
+    if(fbDivBy5&&fbDivBy3){
+        fbArray.push("FizzBuzz")
+    }
+    else if(fbDivBy5){
+        fbArray.push("Buzz")
+    }
+    else if(fbDivBy3){
+        fbArray.push("Fizz")
+    }
+    else{
+        fbArray.push(fbNumber)
+    }
+}
+console.log(fbArray);
