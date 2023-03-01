@@ -144,3 +144,15 @@ for(var i =0; i<userInput9; i++){
     }
 }
 console.log(fbArray);
+
+// Exercise 10: Write a program that randomly outputs a name from a name list as to indicates-
+//-who is going to pay for the lunch
+var lunchListEx10 = ["Amanda", "Roger", "Mathew", "Jason", "Monica", "Deby"];
+
+function lunchPayName(){
+    var numberOfPeopleEx10 = lunchListEx10.length;
+    var randomNumberEx10 = Math.random();
+    var arrayPositionEx10 = Math.floor(randomNumberEx10*numberOfPeopleEx10);
+    return lunchList[arrayPositionEx10];
+}
+alert("It's "+lunchPayName()+ " turn to pay for lunch!");
