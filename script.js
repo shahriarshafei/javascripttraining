@@ -179,3 +179,29 @@ function beerSongEnd(){
     console.log("Go to the store and buy some more, 99 bottles of beer on the wall");
 }
 beerSongEnd();
+
+// Exercise 12: Write a programs to prints out Fibonacci sequence of desired lenght
+var userInputEx12 = prompt("Enter the lenght of the squence: ")
+function fibonacciGenerator(){
+    var fibonacciArray = [];
+    if(userInputEx12==1){
+        fibonacciArray=[0]
+    }
+    else if (userInputEx12==2){
+        fibonacciArray=[0,1]
+    }
+    else if(userInputEx12>2){
+        fibonacciArray=[0,1];
+        for(var i = 3; i<=userInputEx12; i++){
+            fibonacciArray.push(fibonacciArray[i-3]+fibonacciArray[i-2])
+        }
+    }
+    else{
+        fibonacciArray=["You didn't select a valid range."]
+    }
+    return fibonacciArray;
+}
+function consloeLog(prompt){
+    console.log(prompt);
+}
+consloeLog(fibonacciGenerator());
