@@ -156,3 +156,26 @@ function lunchPayName(){
     return lunchList[arrayPositionEx10];
 }
 alert("It's "+lunchPayName()+ " turn to pay for lunch!");
+
+// Exercise 11: Write a program that prints the lyrics of the song "99 bottle of beer" using-
+//-while loop in the console
+var beer = 99;
+while(beer>1){
+    var bottleWord = "bottles";
+    
+    console.log(beer+" bottles of beer on the wall, "+beer+ " " +bottleWord+" of beer.");
+    beer--;
+    if (beer===1){
+        bottleWord = "bottle"
+    }
+    console.log("Take one down and pass it around, "+beer+ " " + bottleWord+" of beer on the wall.");
+    console.log("");
+}
+function beerSongEnd(){
+    console.log(beer+" bottle of beer on the wall, "+beer+" bottle of beer.");
+    console.log("Take one down and pass it around, no more bottles of beer on the wall.");
+    console.log("");
+    console.log("No more bottles of beer on the wall, no more bottles of beer");
+    console.log("Go to the store and buy some more, 99 bottles of beer on the wall");
+}
+beerSongEnd();
