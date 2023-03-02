@@ -1,7 +1,3 @@
-// Useful Codes:   
-// arrayName.push() -> add an item to the end of the array
-// var audio = new Audio("URL"); -> audio.play(); -> method for playing an audio file
-
 // Exrecise 1: Write a program that inputs user name and alrts it with the first charachter in uppercase form and the rest in lower case, no matter how the user input it
 var userInput = prompt("Please enter your name: ");
 var firstChar = userInput.slice(0,1).toUpperCase();
